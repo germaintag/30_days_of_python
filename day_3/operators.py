@@ -47,7 +47,17 @@ Calculate the slope and Euclidean distance betwenn point (2, 2) and point (6,10)
 slope_2 = (10 - 2)/(6 - 2)
 euclidean_distance = math.sqrt(pow(6-2,2) + pow(10-2,2))
 #Question 10
+#1 check if both slope are equal
+are_equal = slope == slope_2
+print("Are the slopes equal ?", are_equal)
+#2 check if the first slope is greater than the second slope
+is_first_slope_greater = slope > slope_2
+print("Is the first slope greater than slope 9?", is_first_slope_greater)
+#3 check if the second slope is greater than the first slope
+is_second_slope_greater = slope < slope_2
+print("Is the second slope greater than slope 8?", is_second_slope_greater)
 #Question 11
+
 #Question 12
 """
 Calculate the length of the words "python" and "dragon",then make a falsy comparison to check if their lengths are different.
@@ -98,40 +108,4 @@ print(line2)
 print(line3)
 print(line4)
 print(line5)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
