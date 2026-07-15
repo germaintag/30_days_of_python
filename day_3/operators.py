@@ -63,8 +63,27 @@ print("Is the second slope greater than slope 8?", is_second_slope_greater)
 #--------------------------------------------------------------------------------------------------
 #Question 11
 """
-TODO
+Calculate the value of y (y = x^2 + 6x + 9).
+Try to use different x values and figure out at what x value y is going to be 0.
 """
+# Trial 1: If x is 0
+x_test1 = 0
+y_test1 = (x_test1 ** 2) + (6 * x_test1) + 9
+print("If x is 0, y is:", y_test1)
+
+# Trial 2: If x is 2
+x_test2 = 2
+y_test2 = (x_test2 ** 2) + (6 * x_test2) + 9
+print("If x is 2, y is:", y_test2)
+
+# Trial 3: If x is -3 (Our answer!)
+x_test3 = -3
+y_test3 = (x_test3 ** 2) + (6 * x_test3) + 9
+print("If x is -3, y is:", y_test3)
+
+# Comparison to prove that y is equal to 0 when x is -3
+is_y_zero = (y_test3 == 0)
+print("Is y equal to 0 when x is -3 ?", is_y_zero)
 #--------------------------------------------------------------------------------------------------
 #Question 12
 """
@@ -97,9 +116,13 @@ print(the_result)
 #--------------------------------------------------------------------------------------------------#--------------------------------------------------------------------------------------------------
 #Question 15
 """
+Check if 'on' is NOT in both 'dragon' and 'python'
 """
-#--------------------------------------------------------------------------------------------------#--------------------------------------------------------------------------------------------------
-#Question 16
+no_on_in_dragon = "on" not in "dragon"
+no_on_in_python = "on" not in "python"
+final_result = no_on_in_dragon and no_on_in_python
+print("There is no 'on' in both dragon and python:", final_result)
+#--------------------------------------------------------------------------------------------------
 """
 Find the length of the text python and convert the value to float and convert it to string
 """
