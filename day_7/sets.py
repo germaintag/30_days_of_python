@@ -7,29 +7,30 @@ it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Am
 A = {19, 22, 24, 20, 25, 26}
 B = {19, 22, 20, 25, 26, 24, 28, 27}
 age = [22, 19, 24, 25, 26, 24, 25, 24]
-
+#----------------------------------------------------------------------------------------------
 #Question 1
-# Getting the number of elements in the set with len()
+#Getting the number of elements in the set
 print("the length of it_companies is: ", len(it_companies))
-
+#-----------------------------------------------------------------------------------------------
 #Question 2
-# Adding a single item to the set using .add()
+#Adding a single item to the set
 it_companies.add('Twitter')
-
+#-----------------------------------------------------------------------------------------------
 #Question 3
-# Adding multiple items at once using .update() with a list
+#Adding multiple items at once using .update() with a list
 it_companies.update(["huawei","nothing"])
-
+#-----------------------------------------------------------------------------------------------
 #Question 4
-# Removing an item with .remove() (raises KeyError if item doesn't exist)
+#Removing an item with .remove()
 it_companies.remove("Google")
-
+#-----------------------------------------------------------------------------------------------
 #Question 5
 """What is the difference between remove and discard?"""
-# Note: .remove() throws an error if the item is missing,
-# while .discard() does nothing and won't crash the code.
+#.remove() throws an error if the item is missing,
+#.discard() does nothing and won't crash the code.
 #-----------------------------------------------------------------------------------------------
 #exercice level 2
+#-----------------------------------------------------------------------------------------------
 #Question 1
 #Returns a new set with items from both sets.
 print(A.union(B))
@@ -60,6 +61,8 @@ print(A.symmetric_difference(B))
 del A
 del B
 del it_companies
+#-----------------------------------------------------------------------------------------------
+#exercice level 3
 #-----------------------------------------------------------------------------------------------
 #Question 1
 #Converting list to set automatically removes duplicate values
