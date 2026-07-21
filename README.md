@@ -8,11 +8,11 @@ My progress journal for the **30 Days of Python** challenge by @Asabeneh. Here, 
 - [x] **Day 2**: Variables 
 - [x] **Day 3**: Operators 
 - [ ] **Day 4**: Strings
-- [ ] **Day 5**: Lists
-- [ ] **Day 6**: Tuples
-- [ ] **Day 7**: Sets
+- [x] **Day 5**: Lists
+- [x] **Day 6**: Tuples
+- [x] **Day 7**: Sets
 - [ ] **Day 8**: Dictionaries
-- [ ] **Day 9**: Conditionals
+- [x] **Day 9**: Conditionals
 - [ ] **Day 10**: Loops
 - [ ] **Day 11**: Functions
 - [ ] **Day 12**: Modules
