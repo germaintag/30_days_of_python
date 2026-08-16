@@ -59,3 +59,43 @@ print(fruits)
 #--------------------------------------------------------------------------------------------------
 #Exercises: Level 3
 #--------------------------------------------------------------------------------------------------
+person = {
+        'first_name': 'Asabeneh',
+        'last_name': 'Yetayeh',
+        'age': 250,
+        'country': 'Finland',
+        'is_married': True,
+        'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+        'address': {
+            'street': 'Space street',
+            'zipcode': '02210'
+        }
+    }
+#Question 1
+#Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
+if "skills" in person:
+    middle_index = len(person["skills"]) // 2
+    print(person["skills"][middle_index])
+# --------------------------------------------------------------------------------------------------
+#Question 2
+#Check if the person dictionary has skills key and 'Python' as skill.
+if "skills" in person:
+    if "Python" in person["skills"]:
+        print("The personn has python in his/her skills")
+#--------------------------------------------------------------------------------------------------
+#Question 3
+#If a person skills has only JavaScript and React, print('He is a front end developer'), if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title')
+skills = person['skills']
+if len(skills) == 2 and 'JavaScript' in skills and 'React' in skills:
+    print('He is a front end developer')
+elif 'Node' in skills and 'Python' in skills and 'MongoDB' in skills:
+    print('He is a backend developer')
+elif 'React' in skills and 'Node' in skills and 'MongoDB' in skills:
+    print('He is a fullstack developer')
+else:
+    print('unknown title')
+#--------------------------------------------------------------------------------------------------
+#Question 4
+#If the person is married and if he lives in Finland, print the information in the following format:  Asabeneh Yetayeh lives in Finland. He is married.
+if person['is_married'] and person['country'] == 'Finland':
+    print("Asabeneh Yetayeh lives in Finland. He is married.")
